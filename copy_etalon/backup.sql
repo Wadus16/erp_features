@@ -1,9 +1,10 @@
-use master
 DECLARE @mydb nvarchar(50);
-set @mydb = '$(restoreddb)';
-if db_id(@mydb) is null
-begin
-declare @sqltext nvarchar(50);
-set @sqltext = 'create database '+@mydb;
-exec(@sqltext)
-end
+-- Ввести имя базы данных
+set @mydb = '$(backupdb)';
+
+DECLARE @back_file nvarchar(300);
+-- Ввести расположение файла бэкапа
+set @back_file = '$(bakfile)';
+
+BACKUP DATABASE @mydb TO  DISK = @back_file WITH NOFORMAT, NOINIT,  NAME = N'Full backup', SKIP, NOREWIND, NOUNLOAD, STATS = 10
+GO
