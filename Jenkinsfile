@@ -66,29 +66,29 @@ pipeline {
                 }
             }
         }
-        // stage("Запуск") {
-        //     steps {
-        //         timestamps {
-        //             script {
+         stage("Запуск") {
+             steps {
+                 timestamps {
+                    script {
 
-        //                 for (i = 0;  i < templatebasesList.size(); i++) {
-        //                     templateDb = templatebasesList[i]
-        //                     storage1cPath = storages1cPathList[i]
-        //                     testbase = "test_${templateDb}"
-        //                     testbaseConnString = projectHelpers.getConnString(server1c, testbase, agent1cPort)
-        //                     backupPath = "${env.WORKSPACE}/build/temp_${templateDb}_${utils.currentDateStamp()}"
+                        for (i = 0;  i < templatebasesList.size(); i++) {
+                            templateDb = templatebasesList[i]
+                            storage1cPath = storages1cPathList[i]
+                            testbase = "test_${templateDb}"
+                            testbaseConnString = projectHelpers.getConnString(server1c, testbase, agent1cPort)
+                            backupPath = "${env.WORKSPACE}/build/temp_${templateDb}_${utils.currentDateStamp()}"
 
-        //                     // 1. Удаляем тестовую базу из кластера (если он там была) и очищаем клиентский кеш 1с
-        //                     dropDbTasks["dropDbTask_${testbase}"] = dropDbTask(
-        //                         server1c, 
-        //                         server1cPort, 
-        //                         serverSql, 
-        //                         testbase, 
-        //                         admin1cUser, 
-        //                         admin1cPwd,
-        //                         sqluser,
-        //                         sqlPwd
-        //                     )
+                            // 1. Удаляем тестовую базу из кластера (если он там была) и очищаем клиентский кеш 1с
+                            dropDbTasks["dropDbTask_${testbase}"] = dropDbTask(
+                                server1c, 
+                                server1cPort, 
+                                serverSql, 
+                                testbase, 
+                                admin1cUser, 
+                                admin1cPwd,
+                                sqluser,
+                                sqlPwd
+                            )
         //                     // 2. Делаем sql бекап эталонной базы, которую будем загружать в тестовую базу
         //                     backupTasks["backupTask_${templateDb}"] = backupTask(
         //                         serverSql, 
@@ -130,7 +130,7 @@ pipeline {
         //                         admin1cPwd,
         //                         testbaseConnString
         //                     )
-        //                 }
+                         }
 
         //                 parallel dropDbTasks
         //                 parallel backupTasks
@@ -138,10 +138,10 @@ pipeline {
         //                 parallel createDbTasks
         //                 parallel updateDbTasks
         //                 parallel runHandlers1cTasks
-        //             }
-        //         }
-        //     }
-        // }
+                     }
+                 }
+             }
+         }
         stage("Тестирование ADD") {
             steps {
                 timestamps {
