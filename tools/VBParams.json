@@ -3,7 +3,7 @@
     "ЗавершитьРаботуСистемы": true,
     "ВыводитьСообщенияВФайл": "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/build/build/out/vb.log",
     "ЗакрытьTestClientПослеЗапускаСценариев": true,
-    "КаталогФич": "C:\\Users\\win10rus\\Documents\\Jenkins\\workspace\\erp_features\\features",
+    "КаталогФич": "C:\\Users\\win10rus\\Documents\\Jenkins\\workspace\\erp_features",
     "КаталогиБиблиотек": [
         "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/libraries"
     ],
