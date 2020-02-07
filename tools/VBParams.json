@@ -1,27 +1,27 @@
 {
     "ВыполнитьСценарии": true,
     "ЗавершитьРаботуСистемы": true,
-    "ВыводитьСообщенияВФайл": "C:/Users/Вадим/build/out/vb.log",
+    "ВыводитьСообщенияВФайл": "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/build/build/out/vb.log",
     "ЗакрытьTestClientПослеЗапускаСценариев": true,
-    "КаталогФич": "C:/Users/Вадим/features",
+    "КаталогФич": "C:\\Users\\win10rus\\Documents\\Jenkins\\workspace\\erp_features\\features",
     "КаталогиБиблиотек": [
-        "C:/Users/Вадим/tools/add/features/libraries"
+        "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/libraries"
     ],
     "СписокТеговИсключение":[
         "IgnoreOnCIMainBuild",
         "Draft"
     ],
     "ВРЕМЕННО_ОТКЛЮЧЕН_ДелатьОтчетВФорматеCucumberJson": false,
-    "ВРЕМЕННО_ОТКЛЮЧЕН_КаталогOutputCucumberJson": "C:/Users/Вадим/build/out/cucumber",
+    "ВРЕМЕННО_ОТКЛЮЧЕН_КаталогOutputCucumberJson": "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/build/out/cucumber",
     "ВыгружатьСтатусВыполненияСценариевВФайл": true,
-    "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "C:/Users/Вадим/build/out/buildStatus.log",
+    "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/build/out/buildStatus.log",
     "ДелатьЛогВыполненияСценариевВТекстовыйФайл": true,
-    "ИмяФайлаЛогВыполненияСценариев": "C:/Users/Вадим/build/out/vbOnline.log",
+    "ИмяФайлаЛогВыполненияСценариев": "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/build/out/vbOnline.log",
     "ДелатьОтчетВФорматеjUnit": true,
-    "КаталогOutputjUnit": "C:/Users/Вадим/build/out/bdd-junitreport",
+    "КаталогOutputjUnit": "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/build/out/bdd-junitreport",
     "ДелатьСкриншотПриВозникновенииОшибки": false,
     "СниматьСкриншотКаждогоОкна1С": false,
-    "КаталогOutputСкриншоты": "C:/Users/Вадим/build/out/allure",
+    "КаталогOutputСкриншоты": "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/build/out/allure",
     "КомандаСделатьСкриншот": "nircmd savescreenshot ",
     "ПутьКRunSikulix": "tools/sikulix/runsikulix.cmd",
     "ПоставщикПользовательскихНастроек": "",
