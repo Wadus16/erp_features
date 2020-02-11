@@ -5,7 +5,7 @@
     "ЗакрытьTestClientПослеЗапускаСценариев": true,
     "КаталогФич": "C:\\Users\\win10rus\\Documents\\Jenkins\\workspace\\erp_features\\features",
     "КаталогиБиблиотек": [
-        "C:/Users/win10rus/Documents/Jenkins/workspace/erp_features/libraries"
+        "$instrumentsRoot/features/libraries"
     ],
     "СписокТеговИсключение":[
         "IgnoreOnCIMainBuild",
